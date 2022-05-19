@@ -1,9 +1,9 @@
-# Получаем и выводим весь список контактов в виде таблицы
+## Первый скрин
 
-node app --action getAll
+команды:
 
-# Добавялем контакт
+    node app --action getAll
 
-node app --action add --name Mango --email mango@gmail.com --phone 322-22-22
+    node app --action add --name Mango --email mango@gmail.com --phone 322-22-22
 
-https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
+![alt text](https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl)
