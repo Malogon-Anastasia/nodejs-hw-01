@@ -8,7 +8,7 @@
 
     node app --action add --name Mango --email mango@gmail.com --phone 322-22-22
 
-https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
+![alt text](https://ibb.co/JccpB34)
 
 ## Второй скрин
 
