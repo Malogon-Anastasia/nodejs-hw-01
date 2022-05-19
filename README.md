@@ -2,7 +2,7 @@
 
 команды:
 
-    Получаем и выводим весь список контактов в виде таблицы
+    Получаем и выводим весь список контактов в виде таблицы (console.table)
 
     node app --action getAll
 
@@ -16,6 +16,18 @@ https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
 
     команда:
 
+    Удаляем контакт по id
+
     node app --action removeById --id=3
 
 https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
+
+## Третий скрин
+
+    команда:
+
+    Получаем контакт по id
+
+    node app --action getById --id 5
+
+https://monosnap.com/file/svqo8TCbs3D2yQC8siHeuDnu8cjS8A
