@@ -1,7 +1,7 @@
 const yargs = require("yargs");
 
 const {hideBin} = require("yargs/helpers");
-const contactsOperations = require("./products");
+const contactsOperations = require("./db");
 
 const invokeAction = async({action, id, name, email, phone})=> {
     switch(action){
