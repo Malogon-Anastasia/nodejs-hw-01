@@ -1,20 +1,16 @@
 ## Первый скрин
 
-команды:
-
     Получаем и выводим весь список контактов в виде таблицы (console.table)
 
     node app --action getAll
 
-    Добавялем контакт
+    Добавляем контакт
 
     node app --action add --name Mango --email mango@gmail.com --phone 322-22-22
 
 https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
 
 ## Второй скрин
-
-    команда:
 
     Удаляем контакт по id
 
@@ -23,8 +19,6 @@ https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
 https://monosnap.com/file/MQ3dLmit4pWpkwf8kdT6xjJLpzfvrQ
 
 ## Третий скрин
-
-    команда:
 
     Получаем контакт по id
 

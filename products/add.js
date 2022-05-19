@@ -13,8 +13,7 @@ const add = async(name, email, phone)=> {
         }
       }
       contacts.sort((a, b) => a.id - b.id);
-   
-   
+     
     await updateContacts(contacts);
     return newContact;
 }
