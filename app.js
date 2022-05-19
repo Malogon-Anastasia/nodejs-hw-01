@@ -11,10 +11,10 @@ const invokeAction = async({action, id, name, email, phone})=> {
             break;
         case "getById":
             const contact = await contactsOperations.getById(id);
-            if(!contact) {
+            if (!contact) {
                 throw new Error(`Contact with id=${id} not found`);
             }
-            console.log(contact);
+            console.table(contact);
             break;
         case "add":
             const newContact = await contactsOperations.add(name, email, phone);
@@ -22,7 +22,7 @@ const invokeAction = async({action, id, name, email, phone})=> {
             break;
         case "updateById":
             const updateContact = await contactsOperations.updateById(id, name, email, phone);
-            if(!updateContact) {
+            if (!updateContact) {
                 throw new Error(`Contact with id=${id} not found`);
             }
             console.log(updateContact);

@@ -1,8 +1,8 @@
 const getAll = require("./getAll");
 
-const getById = async(id)=> {
+const getById = async(contactId)=> {
     const contacts = await getAll();
-    const result = contacts.find(contact => contact.id === id);
+    const result = contacts.find((item) => item.id == contactId);
     if(!result){
         return null;
     }
