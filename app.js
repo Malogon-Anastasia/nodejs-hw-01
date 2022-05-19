@@ -21,7 +21,7 @@ const invokeAction = async({action, id, name, email, phone})=> {
             console.log(newContact);
             break;
         case "updateById":
-            const updateContact = await contactsOperations.updateById(id, data);
+            const updateContact = await contactsOperations.updateById(id, name, email, phone);
             if(!updateContact) {
                 throw new Error(`Contact with id=${id} not found`);
             }
