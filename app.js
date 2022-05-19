@@ -1,18 +1,17 @@
 const yargs = require("yargs");
 
 const {hideBin} = require("yargs/helpers");
-
 const contactsOperations = require("./products");
 
 const invokeAction = async({action, id, data})=> {
     switch(action){
         case "getAll":
             const contacts = await contactsOperations.getAll();
-            console.log(contacts);
+            console.table(contacts);
             break;
         case "getById":
             const contact = await contactsOperations.getById(id);
-            if(!contact){
+            if(!contact) {
                 throw new Error(`Contact with id=${id} not found`);
             }
             console.log(contact);
@@ -23,7 +22,7 @@ const invokeAction = async({action, id, data})=> {
             break;
         case "updateById":
             const updateContact = await contactsOperations.updateById(id, data);
-            if(!updateContact){
+            if(!updateContact) {
                 throw new Error(`Contact with id=${id} not found`);
             }
             console.log(updateContact);

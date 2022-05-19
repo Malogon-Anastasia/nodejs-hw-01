@@ -6,8 +6,8 @@ const getAll = require("./getAll");
 const add = async(data)=> {
     const contacts = await getAll();
     const newContact = {...data, id: v4()};
-    products.push(newContact);
-    await updateProducts(contacts);
+    contacts.push(newContact);
+    await updateContacts(contacts);
     return newContact;
 }
 
