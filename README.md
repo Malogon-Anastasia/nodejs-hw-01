@@ -20,7 +20,7 @@ https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
 
     node app --action removeById --id=3
 
-https://monosnap.com/file/jqFlL4O8fjJFnQn6aXSmfe1XnGwScl
+https://monosnap.com/file/MQ3dLmit4pWpkwf8kdT6xjJLpzfvrQ
 
 ## Третий скрин
 
