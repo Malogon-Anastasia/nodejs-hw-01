@@ -3,7 +3,7 @@ const yargs = require("yargs");
 const {hideBin} = require("yargs/helpers");
 const contactsOperations = require("./products");
 
-const invokeAction = async({action, id, data})=> {
+const invokeAction = async({action, id, name, email, phone})=> {
     switch(action){
         case "getAll":
             const contacts = await contactsOperations.getAll();
@@ -17,7 +17,7 @@ const invokeAction = async({action, id, data})=> {
             console.log(contact);
             break;
         case "add":
-            const newContact = await contactsOperations.add(data);
+            const newContact = await contactsOperations.add(name, email, phone);
             console.log(newContact);
             break;
         case "updateById":
